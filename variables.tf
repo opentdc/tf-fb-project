@@ -28,7 +28,7 @@ variable "app_id" {
   type        = string
 }
 
-variable "version" {
+variable "project_version" {
   description = "The version of the firebase project, e.g. 01, 02, 03"
   type        = string
   default     = "01"

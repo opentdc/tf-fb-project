@@ -37,5 +37,4 @@ variable "project_version" {
 variable "project_id" {
   description = "The project id of the firebase project, 6-30 characters, lowercase only, with digits and hypens, must start with a letter. Uniquely identifies the project to Google. Use naming convention: app-nn-env-platform, e.g. bka-01-dev-web."
   type        = string
-  default     = app_id + "-" + version
 }

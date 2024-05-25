@@ -37,7 +37,7 @@ provider "google-beta" {
 
 
 # Create a new Google Cloud project.
-resource "google_project" "default" {
+resource "google_project" "test" {
   provider        = google-beta.no_user_project_override
   name            = var.project_name
   project_id      = var.project_id
@@ -70,7 +70,7 @@ resource "google_project_service" "firebase" {
 }
 
 # Enable Firebase services for the new project created above.
-resource "google_firebase_project" "default" {
+resource "google_firebase_project" "test" {
   provider  = google-beta
   project   = var.project_id
 
